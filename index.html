@@ -1,1 +1,46 @@
-boxy boo is coming
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		button{
+			margin: 10px;
+		}
+	</style>
+	<title>Happy new year</title>
+</head>
+<body>
+	<p id="text" style="font-size: 42px;">0</p>
+	<button onclick="cl()">click</button>
+	<br>
+	<button onclick="level_up()">level up</button>
+	<br>
+	<button onclick="auto()">auto click</button>
+	<br>
+	<div style="background-color: #efefef; padding: 10px; width: 220px;">
+		<img src="question.jpg" width="200px" style="margin-left: 10px;" id="tree" onclick="buy()">
+		<br>
+		<h1 style="text-align: center;">10000 click's</h1>
+	</div>
+
+	
+	<script type="text/javascript">
+		var c = 0;
+		var text = document.getElementById('text');
+		var a = 1;
+		function cl() {
+			console.log("click");
+			c = c+a;
+			text.innerHTML = c;
+		}
+
+		function level_up() {
+			console.log("level_up");
+			a = a +1;
+		}
+	</script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
